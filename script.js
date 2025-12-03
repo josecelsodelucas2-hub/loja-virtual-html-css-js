@@ -16,5 +16,4 @@ function updateCart() {
   if (items) {
     items.innerHTML = '';
     cart.forEach(item => {
-      let li = document.createElement('li');
-      li.textContent = `${item.name} -
+      let li = document.create
