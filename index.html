@@ -17,100 +17,56 @@
   </header>
 
   <section id="products">
+    <!-- Camisa -->
     <div class="product">
-      <img src="img/camisa.jpg" alt="Camisa" />
-      <h3>Camisa </h3>
+      <img src="img/camisa.jpg" alt="Camisa Básica" />
+      <h3>Camisa Básica</h3>
       <p>R$ 49,90</p>
-      <button onclick="addToCart('Camisa', 49.90)">Adicionar ao Carrinho</button>
+      <button onclick="addToCart('Camisa Básica', 49.90)">Adicionar ao Carrinho</button>
     </div>
 
+    <!-- Tênis -->
     <div class="product">
-      <img src="img/tenis.jpg" alt="Tênis" />
-      <h3>Tenis </h3>
+      <img src="img/tenis.jpg" alt="Tênis Esportivo" />
+      <h3>Tênis Esportivo</h3>
       <p>R$ 199,90</p>
-      <button onclick="addToCart('Tênis', 199.90)">Adicionar ao Carrinho</button>
+      <button onclick="addToCart('Tênis Esportivo', 199.90)">Adicionar ao Carrinho</button>
     </div>
 
+    <!-- Relógio Digital -->
     <div class="product">
-      <img src="img/relogio-digital.jpg" alt="Relógio-Digital" />
-      <h3>Relógio-Digital</h3>
+      <img src="img/relogio-digital.jpg" alt="Relógio Digital" />
+      <h3>Relógio Digital</h3>
       <p>R$ 150,00</p>
-      <button onclick="addToCart('Relógio-Digital', 150.00)">Adicionar ao Carrinho</button>
+      <button onclick="addToCart('Relógio Digital', 150.00)">Adicionar ao Carrinho</button>
     </div>
 
+    <!-- Fone de Ouvido -->
     <div class="product">
-      <img src="img/fones.jpg" alt="Fones" />
-      <h3>Fones</h3>
+      <img src="img/fones.jpg" alt="Fone de Ouvido" />
+      <h3>Fone de Ouvido</h3>
       <p>R$ 89,90</p>
-      <button onclick="addToCart('Fones', 89.90)">Adicionar ao Carrinho</button>
+      <button onclick="addToCart('Fone de Ouvido', 89.90)">Adicionar ao Carrinho</button>
     </div>
 
+    <!-- Mochila -->
     <div class="product">
-      <img src="img/mochila.jpg" alt="Mochila" />
+      <img src="img/mochila.jpg" alt="Mochila Escolar" />
       <h3>Mochila Escolar</h3>
       <p>R$ 120,00</p>
-      <button onclick="addToCart('Mochila', 120.00)">Adicionar ao Carrinho</button>
+      <button onclick="addToCart('Mochila Escolar', 120.00)">Adicionar ao Carrinho</button>
     </div>
 
+    <!-- Notebook -->
     <div class="product">
-      <img src="img/notebook.jpg" alt="notebook" />
+      <img src="img/notebook.jpg" alt="Notebook" />
       <h3>Notebook</h3>
       <p>R$ 2.499,00</p>
-      <button onclick="addToCart('notebook', 2499.00)">Adicionar ao Carrinho</button>
+      <button onclick="addToCart('Notebook', 2499.00)">Adicionar ao Carrinho</button>
     </div>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Minha Loja</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section id="login">
-    <h2>Login</h2>
-    <form onsubmit="login(event)">
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="password" placeholder="Senha" required>
-      <button type="submit">Entrar</button>
-    </form>
-
-    <h2>Cadastro</h2>
-    <form onsubmit="register(event)">
-      <input type="text" id="name" placeholder="Nome" required>
-      <input type="email" id="newEmail" placeholder="Email" required>
-      <input type="password" id="newPassword" placeholder="Senha" required>
-      <button type="submit">Cadastrar</button>
-    </form>
-  </section>
-  <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout - Minha Loja</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section id="checkout">
-    <h2>Resumo da Compra</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: R$ <span id="total">0</span></p>
-    <form onsubmit="finalizePurchase(event)">
-      <input type="text" placeholder="Nome completo" required>
-      <input type="text" placeholder="Endereço" required>
-      <button type="submit">Finalizar Compra</button>
-    </form>
-  </section>
-  <script src="script.js"></script>
-</body>
-</html>
-
+  
