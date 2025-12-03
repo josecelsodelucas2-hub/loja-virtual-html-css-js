@@ -16,4 +16,24 @@ function updateCart() {
   if (items) {
     items.innerHTML = '';
     cart.forEach(item => {
-      let li = document.create
+      let li = document.createElement('li');
+      li.textContent = `${item.name} - R$ ${item.price.toFixed(2)}`;
+      items.appendChild(li);
+    });
+  }
+
+  const totalSpan = document.getElementById('total');
+  if (totalSpan) totalSpan.innerText = total.toFixed(2);
+}
+
+function finalizePurchase(event) {
+  event.preventDefault();
+  alert("Compra finalizada com sucesso! Obrigado por comprar na Minha Loja.");
+  cart = [];
+  localStorage.removeItem('cart');
+  total = 0;
+  updateCart();
+}
+
+// Atualiza ao carregar a página
+updateCart();
